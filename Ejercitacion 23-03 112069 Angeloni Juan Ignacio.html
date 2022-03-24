@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<!--Crear un formulario utilizando los siguientes inputs: text, date, select, textarea, radio y button.-->
+
+<head>
+    <meta charset="UTF-8">
+    <title> Ejercicio Clase 2- - Prog 3 </title>
+</head>
+
+<body>
+
+    <body>
+        <style>
+            body {
+                background-image: url("https://www.todofondos.net/wp-content/uploads/la-mayoria-de-las-ideas-de-diseno-colores-claros-pictures-e-inspiracion-modern.-imagen-lisos-576x1024.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            input::placeholder {
+                color: rgb(128, 128, 128);
+                font-weight: 700;
+            }
+        </style>
+
+        <body>
+
+            <form action="/" method="post">
+                <!-- Aca va la URL donde a donde se va a commitear el proyecto. El método puede ser post, get, hub. para los forms es el get, y cuando haya una app escuchando nuestras peticiones usamos el post-->>
+                <b>Nombre:</b> <br> <!-- salto de linea br -->
+                <input type="text" placeholder="Ingrese Nombre" name="nombre"> <br>
+                <b>Apellido:</b> <br>
+                <input type="text" placeholder="Ingrese Apellido" name="apellido"> <br> <br>
+                <b>Día:</b><br>
+                <input type="date" placeholder="Elija el dia para tomar " min=2022-03-23> <br> <br>
+                <b>Seleccione el tipo de tarjeta:</b> <br>
+                <ul>
+                    <li> <input type="radio" name="TipoTarjeta" id="TipoTarjeta" checked> Tarjeta Credito <br></li>
+                    <li><input type="radio" name="TipoTarjeta" id="TipoTarjeta"> Tarjeta Debito<br></li>
+                    <li><input type="radio" name="TipoTarjeta" id="TipoTarjeta"> Efectivo<br></li>
+                </ul>
+                <br>
+                <b>¿Esta compra es para regalo?</b><br>
+                <input type="checkbox" name="Regalo" id="Regalo"> Regalo <br><br>
+
+                <b>Domicilio<br>
+                    <b>Seleccione una localidad</b> <br>
+                    <select names="Localidad" id="Localidad">
+                        <option value="">Seleccione... </option>
+                        <option value="1"> Córdoba </option>
+                        <option value="2"> Alta Gracia</option>
+                        <option value="3"> Carlos Paz </option>
+                    </select>
+                    <br>
+                    <b> Dirrección:</b> <br>
+                    <input type="text" placeholder="Ingrese Calle" name="Calle"> <input type="number"
+                        placeholder="Número" name="numero">
+                    <br><br>
+                    <b>¿Desea agregar un comentario al vendedor?</b> <br>
+                    <textarea type="text" placeholder="Comentario..." name="comentario"
+                        style="background-color:rgb(207, 207, 207)" cols="40" rows="15" style="resize:none"></textarea>
+
+                    <br>
+                    <b>¿Quiere registrar la compra?</b> <br>
+                    <button><b>Registrar</b></button>
+
+
+            </form>
+        </body>
+
+</html>
